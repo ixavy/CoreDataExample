@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNE-VL-89g">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNE-VL-89g">
                                 <rect key="frame" x="242" y="285" width="107" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Pasar a Agenda"/>
@@ -51,10 +52,10 @@
             </objects>
             <point key="canvasLocation" x="36" y="48"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Registros Table View Controller-->
         <scene sceneID="lfD-g8-5L0">
             <objects>
-                <tableViewController id="TUk-as-wnb" sceneMemberID="viewController">
+                <tableViewController id="TUk-as-wnb" customClass="RegistrosTableViewController" customModule="AgendaSwiftTutorial" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ypq-0k-c58">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,7 +63,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="iSA-a1-ged">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iSA-a1-ged" id="2dH-Hq-ObP">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -80,7 +81,7 @@
                     <navigationItem key="navigationItem" id="YJ5-ZG-DQ5">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Xut-Fm-736">
                             <connections>
-                                <segue destination="XXE-3l-LQZ" kind="show" id="q95-dh-JIw"/>
+                                <segue destination="XXE-3l-LQZ" kind="show" id="tkW-is-HLW"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -92,7 +93,7 @@
         <!--Detalle Contacto-->
         <scene sceneID="Pbn-pR-wep">
             <objects>
-                <viewController id="XXE-3l-LQZ" sceneMemberID="viewController">
+                <viewController id="XXE-3l-LQZ" customClass="ViewControllerDetalle" customModule="AgendaSwiftTutorial" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Pxm-iT-VUW"/>
                         <viewControllerLayoutGuide type="bottom" id="Ncz-mR-Iko"/>
@@ -234,6 +235,16 @@
                                     </mask>
                                 </variation>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detalle del Contacto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUl-Ub-KMt">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="122" y="87" width="156" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -269,29 +280,30 @@
                                 <exclude reference="E4X-0n-aDF"/>
                                 <exclude reference="S0f-Hl-4GG"/>
                                 <exclude reference="PVR-2Y-2iV"/>
+                                <exclude reference="sUl-Ub-KMt"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="1k2-r8-Vsr"/>
+                                <exclude reference="DMm-Sl-Ceu"/>
+                                <exclude reference="EUA-UN-cy8"/>
+                                <exclude reference="lHJ-lh-J8G"/>
+                                <exclude reference="yaj-8h-B8k"/>
+                                <exclude reference="zCo-7z-0Hg"/>
+                                <exclude reference="RYE-L3-ejO"/>
+                                <exclude reference="Sxp-bK-IpR"/>
+                                <exclude reference="exY-HX-nkv"/>
+                                <exclude reference="9Fj-qA-XgJ"/>
+                                <exclude reference="PW7-ij-JVj"/>
+                                <exclude reference="PrP-cX-sC6"/>
+                                <exclude reference="Ogp-vR-o4d"/>
+                                <exclude reference="jpr-U8-r8e"/>
+                                <exclude reference="kC2-MH-z5y"/>
                                 <exclude reference="e4x-5B-yiM"/>
                                 <exclude reference="lP9-B8-NMg"/>
                                 <exclude reference="mVH-7A-TtM"/>
                                 <exclude reference="V5A-lU-aEh"/>
                                 <exclude reference="knB-TY-g7G"/>
                                 <exclude reference="pOi-dM-ew4"/>
-                                <exclude reference="1k2-r8-Vsr"/>
-                                <exclude reference="DMm-Sl-Ceu"/>
-                                <exclude reference="EUA-UN-cy8"/>
-                                <exclude reference="Ogp-vR-o4d"/>
-                                <exclude reference="jpr-U8-r8e"/>
-                                <exclude reference="kC2-MH-z5y"/>
-                                <exclude reference="lHJ-lh-J8G"/>
-                                <exclude reference="yaj-8h-B8k"/>
-                                <exclude reference="zCo-7z-0Hg"/>
-                                <exclude reference="9Fj-qA-XgJ"/>
-                                <exclude reference="PW7-ij-JVj"/>
-                                <exclude reference="PrP-cX-sC6"/>
-                                <exclude reference="RYE-L3-ejO"/>
-                                <exclude reference="Sxp-bK-IpR"/>
-                                <exclude reference="exY-HX-nkv"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -303,38 +315,50 @@
                                 <include reference="E4X-0n-aDF"/>
                                 <include reference="S0f-Hl-4GG"/>
                                 <include reference="PVR-2Y-2iV"/>
+                                <include reference="sUl-Ub-KMt"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="1k2-r8-Vsr"/>
+                                <include reference="DMm-Sl-Ceu"/>
+                                <include reference="EUA-UN-cy8"/>
+                                <include reference="lHJ-lh-J8G"/>
+                                <include reference="yaj-8h-B8k"/>
+                                <include reference="zCo-7z-0Hg"/>
+                                <include reference="RYE-L3-ejO"/>
+                                <include reference="Sxp-bK-IpR"/>
+                                <include reference="exY-HX-nkv"/>
+                                <include reference="9Fj-qA-XgJ"/>
+                                <include reference="PW7-ij-JVj"/>
+                                <include reference="PrP-cX-sC6"/>
+                                <include reference="Ogp-vR-o4d"/>
+                                <include reference="jpr-U8-r8e"/>
+                                <include reference="kC2-MH-z5y"/>
                                 <include reference="e4x-5B-yiM"/>
                                 <include reference="lP9-B8-NMg"/>
                                 <include reference="mVH-7A-TtM"/>
                                 <include reference="V5A-lU-aEh"/>
                                 <include reference="knB-TY-g7G"/>
                                 <include reference="pOi-dM-ew4"/>
-                                <include reference="1k2-r8-Vsr"/>
-                                <include reference="DMm-Sl-Ceu"/>
-                                <include reference="EUA-UN-cy8"/>
-                                <include reference="Ogp-vR-o4d"/>
-                                <include reference="jpr-U8-r8e"/>
-                                <include reference="kC2-MH-z5y"/>
-                                <include reference="lHJ-lh-J8G"/>
-                                <include reference="yaj-8h-B8k"/>
-                                <include reference="zCo-7z-0Hg"/>
-                                <include reference="9Fj-qA-XgJ"/>
-                                <include reference="PW7-ij-JVj"/>
-                                <include reference="PrP-cX-sC6"/>
-                                <include reference="RYE-L3-ejO"/>
-                                <include reference="Sxp-bK-IpR"/>
-                                <include reference="exY-HX-nkv"/>
                             </mask>
                         </variation>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Detalle Contacto" id="QpO-3F-YuZ">
-                        <barButtonItem key="leftBarButtonItem" title="Cancelar" id="lUv-hY-bi2"/>
-                        <barButtonItem key="rightBarButtonItem" title="Guardar" id="15s-xi-QVy"/>
+                        <barButtonItem key="leftBarButtonItem" title="Cancelar" id="lUv-hY-bi2">
+                            <connections>
+                                <action selector="cancelarDatos:" destination="XXE-3l-LQZ" id="Ihk-AD-COm"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Guardar" id="15s-xi-QVy">
+                            <connections>
+                                <action selector="modificarDatos:" destination="XXE-3l-LQZ" id="RcV-sP-9Cm"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="nombreDetalle" destination="b4Z-OQ-ClQ" id="9NR-Ka-D6y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="41Q-4U-WNi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
