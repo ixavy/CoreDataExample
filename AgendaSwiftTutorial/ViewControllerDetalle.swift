@@ -11,19 +11,15 @@ import CoreData
 
 class ViewControllerDetalle: UIViewController {
     
+// MARK: - Propiedades
     
-    @IBOutlet weak var nombreDetalle: UITextField!
-    
-    
-  /*
-
     @IBOutlet weak var nombreEditable: UITextField!
     @IBOutlet weak var apellidosEditable: UITextField!
     @IBOutlet weak var edadEditable: UITextField!
     @IBOutlet weak var telefonoEditable: UITextField!
     @IBOutlet weak var direccionEditable: UITextField!
     @IBOutlet weak var cpEditable: UITextField!
-    @IBOutlet weak var ciudadEditable: UITextField! */
+    @IBOutlet weak var ciudadEditable: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,20 +32,14 @@ class ViewControllerDetalle: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+// MARK: - Métodos Propios
+    
     @IBAction func modificarDatos(sender: AnyObject) {
     }
 
     @IBAction func cancelarDatos(sender: AnyObject) {
     }
-    
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+// MARK: - Métodos Delegados
 
 }

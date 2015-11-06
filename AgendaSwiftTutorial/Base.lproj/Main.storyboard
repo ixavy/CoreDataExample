@@ -159,25 +159,6 @@
                                     </mask>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Telefono" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YcE-4N-Qyp">
-                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="hXb-lC-dHg"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="hXb-lC-dHg"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="hXb-lC-dHg"/>
-                                    </mask>
-                                </variation>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Dirección" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E4X-0n-aDF">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <animations/>
@@ -245,6 +226,25 @@
                                     <rect key="frame" x="122" y="87" width="156" height="21"/>
                                 </variation>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Telefono" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YcE-4N-Qyp">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="hXb-lC-dHg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="hXb-lC-dHg"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="hXb-lC-dHg"/>
+                                    </mask>
+                                </variation>
+                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -276,11 +276,11 @@
                                 <exclude reference="b4Z-OQ-ClQ"/>
                                 <exclude reference="dbz-JP-kz0"/>
                                 <exclude reference="BV1-7d-dlP"/>
-                                <exclude reference="YcE-4N-Qyp"/>
                                 <exclude reference="E4X-0n-aDF"/>
                                 <exclude reference="S0f-Hl-4GG"/>
                                 <exclude reference="PVR-2Y-2iV"/>
                                 <exclude reference="sUl-Ub-KMt"/>
+                                <exclude reference="YcE-4N-Qyp"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="1k2-r8-Vsr"/>
@@ -311,11 +311,11 @@
                                 <include reference="b4Z-OQ-ClQ"/>
                                 <include reference="dbz-JP-kz0"/>
                                 <include reference="BV1-7d-dlP"/>
-                                <include reference="YcE-4N-Qyp"/>
                                 <include reference="E4X-0n-aDF"/>
                                 <include reference="S0f-Hl-4GG"/>
                                 <include reference="PVR-2Y-2iV"/>
                                 <include reference="sUl-Ub-KMt"/>
+                                <include reference="YcE-4N-Qyp"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="1k2-r8-Vsr"/>
@@ -357,7 +357,13 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="nombreDetalle" destination="b4Z-OQ-ClQ" id="9NR-Ka-D6y"/>
+                        <outlet property="apellidosEditable" destination="dbz-JP-kz0" id="LU7-2K-cQE"/>
+                        <outlet property="ciudadEditable" destination="PVR-2Y-2iV" id="jAv-LI-3vW"/>
+                        <outlet property="cpEditable" destination="S0f-Hl-4GG" id="cwv-Uz-UwO"/>
+                        <outlet property="direccionEditable" destination="E4X-0n-aDF" id="ZhM-Nt-cie"/>
+                        <outlet property="edadEditable" destination="BV1-7d-dlP" id="P9R-tM-RV8"/>
+                        <outlet property="nombreEditable" destination="b4Z-OQ-ClQ" id="LeQ-RG-vFz"/>
+                        <outlet property="telefonoEditable" destination="YcE-4N-Qyp" id="9hX-1f-ifZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="41Q-4U-WNi" userLabel="First Responder" sceneMemberID="firstResponder"/>
