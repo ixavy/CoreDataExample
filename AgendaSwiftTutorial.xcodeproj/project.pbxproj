@@ -15,10 +15,10 @@
 		3B61C80E1BE922D1006825DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B61C80C1BE922D1006825DB /* LaunchScreen.storyboard */; };
 		3B61C8191BE922D1006825DB /* AgendaSwiftTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B61C8181BE922D1006825DB /* AgendaSwiftTutorialTests.swift */; };
 		3B61C8241BE922D1006825DB /* AgendaSwiftTutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B61C8231BE922D1006825DB /* AgendaSwiftTutorialUITests.swift */; };
-		3B61C8741BEA7AB6006825DB /* Persona+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B61C8721BEA7AB6006825DB /* Persona+CoreDataProperties.swift */; };
-		3B61C8751BEA7AB6006825DB /* Persona.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B61C8731BEA7AB6006825DB /* Persona.swift */; };
 		3B61C8801BEA7E3B006825DB /* ViewControllerDetalle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B61C87F1BEA7E3B006825DB /* ViewControllerDetalle.swift */; };
 		3B61C8821BEA7E76006825DB /* RegistrosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B61C8811BEA7E76006825DB /* RegistrosTableViewController.swift */; };
+		3BE81F261BF644D600515F52 /* Persona+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE81F241BF644D600515F52 /* Persona+CoreDataProperties.swift */; };
+		3BE81F271BF644D600515F52 /* Persona.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE81F251BF644D600515F52 /* Persona.swift */; };
 		EC9B0C73BD7CB0ED1212AF02 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88DA58715F4BEB909BBBC8DF /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -55,10 +55,10 @@
 		3B61C81F1BE922D1006825DB /* AgendaSwiftTutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgendaSwiftTutorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B61C8231BE922D1006825DB /* AgendaSwiftTutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaSwiftTutorialUITests.swift; sourceTree = "<group>"; };
 		3B61C8251BE922D1006825DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3B61C8721BEA7AB6006825DB /* Persona+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Persona+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		3B61C8731BEA7AB6006825DB /* Persona.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persona.swift; sourceTree = "<group>"; };
 		3B61C87F1BEA7E3B006825DB /* ViewControllerDetalle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerDetalle.swift; sourceTree = "<group>"; };
 		3B61C8811BEA7E76006825DB /* RegistrosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrosTableViewController.swift; sourceTree = "<group>"; };
+		3BE81F241BF644D600515F52 /* Persona+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Persona+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3BE81F251BF644D600515F52 /* Persona.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persona.swift; sourceTree = "<group>"; };
 		88DA58715F4BEB909BBBC8DF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8CBBC752DE0420619175C63 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +92,8 @@
 		3B61C7F41BE922D0006825DB = {
 			isa = PBXGroup;
 			children = (
+				3BE81F241BF644D600515F52 /* Persona+CoreDataProperties.swift */,
+				3BE81F251BF644D600515F52 /* Persona.swift */,
 				3B61C7FF1BE922D1006825DB /* AgendaSwiftTutorial */,
 				3B61C8171BE922D1006825DB /* AgendaSwiftTutorialTests */,
 				3B61C8221BE922D1006825DB /* AgendaSwiftTutorialUITests */,
@@ -165,8 +167,6 @@
 			isa = PBXGroup;
 			children = (
 				3B61C8071BE922D1006825DB /* AgendaSwiftTutorial.xcdatamodeld */,
-				3B61C8721BEA7AB6006825DB /* Persona+CoreDataProperties.swift */,
-				3B61C8731BEA7AB6006825DB /* Persona.swift */,
 			);
 			name = CoreData;
 			sourceTree = "<group>";
@@ -370,13 +370,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B61C8741BEA7AB6006825DB /* Persona+CoreDataProperties.swift in Sources */,
 				3B61C8091BE922D1006825DB /* AgendaSwiftTutorial.xcdatamodeld in Sources */,
 				3B61C8801BEA7E3B006825DB /* ViewControllerDetalle.swift in Sources */,
+				3BE81F261BF644D600515F52 /* Persona+CoreDataProperties.swift in Sources */,
 				3B61C8821BEA7E76006825DB /* RegistrosTableViewController.swift in Sources */,
 				3B61C8031BE922D1006825DB /* ViewController.swift in Sources */,
-				3B61C8751BEA7AB6006825DB /* Persona.swift in Sources */,
 				3B61C8011BE922D1006825DB /* AppDelegate.swift in Sources */,
+				3BE81F271BF644D600515F52 /* Persona.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
