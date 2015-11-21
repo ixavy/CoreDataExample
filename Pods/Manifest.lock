@@ -1,0 +1,10 @@
+PODS:
+  - BMInitialsPlaceholderView (1.0.1)
+
+DEPENDENCIES:
+  - BMInitialsPlaceholderView (~> 1.0.0)
+
+SPEC CHECKSUMS:
+  BMInitialsPlaceholderView: 50228fa1182daf531a670cab50018cb6fad6c87a
+
+COCOAPODS: 0.39.0
